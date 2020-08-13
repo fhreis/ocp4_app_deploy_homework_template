@@ -9,3 +9,7 @@ You are expected to clone this repository into your own private repository at ht
 Your Homework assignment will be graded by executing the pipeline at https://github.com/redhat-gpte-devopsautomation/ocp4_app_deploy_homework_grading.
 
 Make sure to read the README in the `openshift-tasks` folder for details on how to configure the tasks application.
+
+Im my case, i just create a file to set the address of the repository.
+
+Good luck!
