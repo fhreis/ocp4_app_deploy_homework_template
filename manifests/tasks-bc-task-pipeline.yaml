@@ -1,0 +1,21 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: tasks-pipeline
+spec:
+  nodeSelector: null
+  output: {}
+  resources: {}
+  successfulBuildsHistoryLimit: 5
+  failedBuildsHistoryLimit: 5
+  strategy:
+    type: JenkinsPipeline
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: openshift-tasks/Jenkinsfile
+  postCommit: {}
+  source:
+    type: Git
+    git:
+      uri: "https://homework-gitea.apps.shared-na4.na4.openshift.opentlc.com/fdosreis-redhat.com/test-test.git"
+  triggers: []
+  runPolicy: Serial
