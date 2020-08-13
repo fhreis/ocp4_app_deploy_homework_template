@@ -47,7 +47,7 @@ USER 1001' --name=jenkins-agent-appdev -n "${GUID}"-jenkins
 # TBD
 echo "Running TBD 3"
 
-oc create secret generic git-secret --from-literal=username=fdosreis-redhat.com --from-literal=password=unimed07 -n ${GUID}-jenkins
+oc create secret generic git-secret --from-literal=username=fdosreis-redhat.com --from-literal=password=password07 -n ${GUID}-jenkins
 
 #Set permissions by me
 oc policy add-role-to-user edit system:serviceaccount:${GUID}-jenkins:jenkins -n ${GUID}-tasks-dev
